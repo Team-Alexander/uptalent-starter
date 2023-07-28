@@ -8,15 +8,34 @@
         <version>3.1.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.uptalent</groupId>
+    <groupId>io.github.uptalent</groupId>
     <artifactId>uptalent-starter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>UpTalent-Starter</name>
     <description>UpTalent-Starter</description>
+    <url>https://github.com/UpTalent/uptalent-starter</url>
+
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.3</spring-cloud.version>
     </properties>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>UpTalent</name>
+            <email>uptalentinfo@gmail.com</email>
+            <organization>com.github.UpTalent</organization>
+            <organizationUrl>https://github.com/UpTalent/</organizationUrl>
+        </developer>
+    </developers>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
