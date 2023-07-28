@@ -10,7 +10,7 @@
     </parent>
     <groupId>io.github.uptalent</groupId>
     <artifactId>uptalent-starter</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.2</version>
     <name>UpTalent-Starter</name>
     <description>UpTalent-Starter</description>
     <url>https://github.com/UpTalent/uptalent-starter</url>
@@ -64,6 +64,17 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-circuitbreaker</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-timelimiter</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
