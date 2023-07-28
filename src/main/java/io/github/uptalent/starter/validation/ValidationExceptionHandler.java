@@ -1,6 +1,6 @@
-package com.uptalent.starter.validation;
+package io.github.uptalent.starter.validation;
 
-import com.uptalent.starter.util.ErrorResponse;
+import io.github.uptalent.starter.util.ErrorResponse;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.ConstraintViolationException;
 import jakarta.validation.Path;
@@ -16,7 +16,7 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static com.uptalent.starter.util.Constants.ACCESS_DENIED_MESSAGE;
+import static io.github.uptalent.starter.util.Constants.ACCESS_DENIED_MESSAGE;
 
 @RestControllerAdvice
 public class ValidationExceptionHandler {

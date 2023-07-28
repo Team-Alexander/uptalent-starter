@@ -1,6 +1,6 @@
-package com.uptalent.starter.util.enums;
+package io.github.uptalent.starter.util.enums;
 
-import com.uptalent.starter.util.exception.InvalidEnumValueException;
+import io.github.uptalent.starter.util.exception.InvalidEnumValueException;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 

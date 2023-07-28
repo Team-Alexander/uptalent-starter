@@ -1,4 +1,4 @@
-package com.uptalent.starter.config;
+package io.github.uptalent.starter.config;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -15,8 +15,8 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 import java.util.List;
 
-import static com.uptalent.starter.util.Constants.USER_ID_KEY;
-import static com.uptalent.starter.util.Constants.USER_ROLE_KEY;
+import static io.github.uptalent.starter.util.Constants.USER_ID_KEY;
+import static io.github.uptalent.starter.util.Constants.USER_ROLE_KEY;
 
 @Component
 public class AuthenticationFilter extends OncePerRequestFilter {
