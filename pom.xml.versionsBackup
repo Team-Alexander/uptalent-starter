@@ -10,7 +10,7 @@
     </parent>
     <groupId>io.github.uptalent</groupId>
     <artifactId>uptalent-starter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>UpTalent-Starter</name>
     <description>UpTalent-Starter</description>
     <url>https://github.com/UpTalent/uptalent-starter</url>
@@ -92,7 +92,7 @@
             <plugin>
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.9</version>
+            <version>1.6.7</version>
             <extensions>true</extensions>
             <configuration>
                 <serverId>ossrh</serverId>
