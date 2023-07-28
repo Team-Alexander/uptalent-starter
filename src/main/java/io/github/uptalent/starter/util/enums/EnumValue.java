@@ -1,4 +1,4 @@
-package com.uptalent.starter.util.enums;
+package io.github.uptalent.starter.util.enums;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

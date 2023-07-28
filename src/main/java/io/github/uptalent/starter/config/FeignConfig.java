@@ -1,4 +1,4 @@
-package com.uptalent.starter.config;
+package io.github.uptalent.starter.config;
 
 import feign.RequestInterceptor;
 import jakarta.servlet.http.HttpServletRequest;
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import static com.uptalent.starter.util.Constants.USER_ID_KEY;
-import static com.uptalent.starter.util.Constants.USER_ROLE_KEY;
+import static io.github.uptalent.starter.util.Constants.USER_ID_KEY;
+import static io.github.uptalent.starter.util.Constants.USER_ROLE_KEY;
 
 @Configuration
 public class FeignConfig {

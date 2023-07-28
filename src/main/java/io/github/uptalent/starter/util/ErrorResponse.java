@@ -1,4 +1,4 @@
-package com.uptalent.starter.util;
+package io.github.uptalent.starter.util;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
