@@ -11,6 +11,7 @@ import io.github.resilience4j.timelimiter.TimeLimiterConfig;
 import io.github.resilience4j.timelimiter.TimeLimiterRegistry;
 
 import java.time.Duration;
+import java.util.Collection;
 
 import static io.github.uptalent.starter.util.Constants.USER_ID_KEY;
 import static io.github.uptalent.starter.util.Constants.USER_ROLE_KEY;
@@ -24,10 +25,13 @@ public class FeignConfig {
     @Bean
     public RequestInterceptor requestInterceptor() {
         return requestTemplate -> {
-            String userId = request.getHeader(USER_ID_KEY);
-            String userRole = request.getHeader(USER_ROLE_KEY);
-            if (userId != null) requestTemplate.header(USER_ID_KEY, userId);
-            if (userRole != null) requestTemplate.header(USER_ROLE_KEY, userRole);
+            Collection<String> skipInterceptorHeaders = requestTemplate.headers().get("skipInterceptor");
+            if (skipInterceptorHeaders == null || !Boolean.parseBoolean(skipInterceptorHeaders.iterator().next())) {
+                String userId = request.getHeader(USER_ID_KEY);
+                String userRole = request.getHeader(USER_ROLE_KEY);
+                if (userId != null) requestTemplate.header(USER_ID_KEY, userId);
+                if (userRole != null) requestTemplate.header(USER_ROLE_KEY, userRole);
+            }
         };
     }
 

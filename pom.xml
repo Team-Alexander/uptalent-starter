@@ -10,7 +10,7 @@
     </parent>
     <groupId>io.github.uptalent</groupId>
     <artifactId>uptalent-starter</artifactId>
-    <version>1.1.4</version>
+    <version>1.1.5</version>
     <name>UpTalent-Starter</name>
     <description>UpTalent-Starter</description>
     <url>https://github.com/UpTalent/uptalent-starter</url>
