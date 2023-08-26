@@ -15,12 +15,10 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 import java.util.List;
 
-import static io.github.uptalent.starter.util.Constants.USER_ID_KEY;
-import static io.github.uptalent.starter.util.Constants.USER_ROLE_KEY;
+import static io.github.uptalent.starter.util.Constants.*;
 
 @Component
 public class AuthenticationFilter extends OncePerRequestFilter {
-
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     @NonNull HttpServletResponse response,
